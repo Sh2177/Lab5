@@ -23,14 +23,21 @@
 // }
 
 // export default App;
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./js/Home";
+import About from "./js/About";
+import Projects from "./js/Projects";
 import React from "react";
+
 function App() {
 return (
-<div className="container text-center">
-<h1>Welcome to My Full-Stack App </h1>
-<p>This is a React app styled with Bootstrap 5.</p>
-</div>
-);
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/projects" element={<Projects />} />
+      </Routes>
+    </Router>
+  );
 }
 export default App;
