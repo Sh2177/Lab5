@@ -24,9 +24,9 @@
 
 // export default App;
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./js/Home";
-import About from "./js/About";
-import Projects from "./js/Projects";
+import Home from './pages/Home';
+import About from "./pages/About";
+import Projects from "./pages/Projects";
 import React from "react";
 
 function App() {
